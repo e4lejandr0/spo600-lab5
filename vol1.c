@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include "vol.h"
 
+#define TABLE_SIZE (1<<16)
 // Function to scale a sound sample using a volume_factor
 // in the range of 0.00 to 1.00.
 static inline int16_t scale_sample(int16_t sample, float volume_factor) {
@@ -11,6 +12,14 @@ static inline int16_t scale_sample(int16_t sample, float volume_factor) {
 
 int main() {
 
+	int16_t* precomputed_table = malloc(TABLE_SIZE);
+	if (!precomputed_table) {
+		fprintf(stderr, "couldn't allocate precomputed table\n");
+		return ENOMEM;
+	}
+
+	for(int i = 0; i < TABLE_SIZE; ++i) {
+	}
 	// Allocate memory for large in and out arrays
 	int16_t*	in;
 	int16_t*	out;
