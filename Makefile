@@ -1,11 +1,11 @@
 # list all binaries in this next line
 BINARIES = vol1
-CCOPTS = -g -O3
+CFLAGS = -g -O3 -Wall
 
 all:	${BINARIES}
 
 vol1:	vol1.c vol.h
-	gcc ${CCOPTS} vol1.c -o vol1
+	gcc ${CFLAGS} vol1.c -o vol1
 
 test1:	vol1
 	bash -c "time ./vol1"

@@ -15,11 +15,15 @@ int main() {
 	int16_t* precomputed_table = malloc(TABLE_SIZE);
 	if (!precomputed_table) {
 		fprintf(stderr, "couldn't allocate precomputed table\n");
-		return ENOMEM;
+		return 1;
 	}
 
+	printf("TABLE_SIZE= %d\n", TABLE_SIZE);
+	// Calculate precomputed values
 	for(int i = 0; i < TABLE_SIZE; ++i) {
+		precomputed_table[i] = scale_sample(i, 0.75);
 	}
+
 	// Allocate memory for large in and out arrays
 	int16_t*	in;
 	int16_t*	out;
@@ -41,7 +45,9 @@ int main() {
 	// This is the interesting part!
 	// Scale the volume of all of the samples
 	for (x = 0; x < SAMPLES; x++) {
-		out[x] = scale_sample(in[x], 0.75);
+		//int16_t current_sample = in[x];
+		//printf("accessing table[%d]\n", current_sample + 32768);
+		out[x] = 0; //precomputed_table[current_sample + 32768]; 
 	}
 	// ######################################
 
