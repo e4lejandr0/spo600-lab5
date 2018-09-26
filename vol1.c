@@ -21,11 +21,11 @@ int main() {
 	int		ttl;
 
 	// Seed the pseudo-random number generator
-	srand(-1);
+	srand(0);
 
 	// Fill the array with random data
 	for (x = 0; x < SAMPLES; x++) {
-		in[x] = (rand()%65536)-32768;
+		//in[x] = (rand()%65536)-32768;
 	}
 
 	// ######################################

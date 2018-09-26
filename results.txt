@@ -1,0 +1,102 @@
+bash -c "time ./vol1"
+Result: 520
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -464
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 224
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -304
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -152
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 16
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -280
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 0
+-- RESULT -- 
+bash -c "time ./vol1"
+bash -c "time ./vol1"
+Result: -280
+
+real	0m0.862s
+user	0m0.684s
+sys	0m0.175s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -256
+
+real	0m0.847s
+user	0m0.668s
+sys	0m0.177s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 728
+
+real	0m0.847s
+user	0m0.658s
+sys	0m0.187s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 544
+
+real	0m0.847s
+user	0m0.670s
+sys	0m0.174s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -736
+
+real	0m0.847s
+user	0m0.670s
+sys	0m0.175s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 712
+
+real	0m0.845s
+user	0m0.657s
+sys	0m0.186s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 136
+
+real	0m0.849s
+user	0m0.660s
+sys	0m0.187s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -464
+
+real	0m0.851s
+user	0m0.675s
+sys	0m0.174s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -424
+
+real	0m0.846s
+user	0m0.667s
+sys	0m0.177s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: -536
+
+real	0m0.848s
+user	0m0.665s
+sys	0m0.180s
+-- RESULT -- 
+bash -c "time ./vol1"
+Result: 808
+
+real	0m0.847s
+user	0m0.677s
+sys	0m0.167s
+-- RESULT -- 

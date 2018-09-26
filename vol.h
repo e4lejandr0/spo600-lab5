@@ -1,1 +1,1 @@
-#define SAMPLES 500000
+#define SAMPLES 180000000
